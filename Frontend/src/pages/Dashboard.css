@@ -1,0 +1,182 @@
+.trainer-dashboard {
+  padding: 40px 0;
+}
+
+.dashboard-header {
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.dashboard-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.stats-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.stats-overview .stat-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eaeaea;
+  transition: transform 0.3s ease;
+}
+
+.stats-overview .stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f7ff;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.stat-content p {
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.create-plan-section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.plan-form {
+  margin-bottom: 40px;
+  background: white;
+}
+
+.plan-form h2 {
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dashboard-section {
+  margin-bottom: 40px;
+}
+
+.dashboard-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.plans-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.plan-item {
+  background: white;
+}
+
+.plan-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.plan-item-header h3 {
+  color: #333;
+  margin: 0;
+  flex: 1;
+}
+
+.plan-item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.plan-item-description {
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.plan-item-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.plan-item-stats span {
+  color: #555;
+}
+
+.subscribers-table {
+  overflow-x: auto;
+}
+
+.subscribers-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.subscribers-table th {
+  background-color: #f8f9fa;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.subscribers-table td {
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6;
+  color: #666;
+}
+
+.subscribers-table tr:hover {
+  background-color: #f8f9fa;
+}

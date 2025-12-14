@@ -1,0 +1,144 @@
+.user-feed {
+  padding: 40px 0;
+}
+
+.feed-header {
+  margin-bottom: 40px;
+}
+
+.feed-header h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.feed-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.feed-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.feed-stats .stat-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feed-stats .stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.feed-stats .stat-icon {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f7ff;
+  border-radius: 50%;
+}
+
+.feed-stats .stat-content h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.feed-stats .stat-content p {
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.feed-section {
+  margin-bottom: 50px;
+}
+
+.section-header {
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 40px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.empty-state h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.empty-state p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.empty-state-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .feed-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .empty-state-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .empty-state-actions .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}

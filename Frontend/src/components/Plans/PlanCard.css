@@ -1,0 +1,108 @@
+.plan-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eaeaea;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 10px;
+}
+
+.plan-header h3 {
+  color: #333;
+  font-size: 20px;
+  margin: 0;
+  flex: 1;
+}
+
+.trainer-badge {
+  background-color: #e3f2fd;
+  color: #4a90e2;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.plan-preview {
+  margin-bottom: 20px;
+}
+
+.plan-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  min-height: 60px;
+}
+
+.plan-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.stat {
+  font-size: 14px;
+  color: #555;
+}
+
+.stat strong {
+  color: #333;
+  margin-right: 5px;
+}
+
+.plan-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.plan-actions .btn {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.trainer-actions {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .plan-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .plan-stats {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .plan-actions .btn {
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,280 @@
+.plan-details {
+  padding: 40px 0;
+}
+
+.back-btn {
+  margin-bottom: 30px;
+}
+
+.plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.plan-title-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.plan-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.plan-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.meta-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.meta-badge.difficulty {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.meta-badge.duration {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.meta-badge.price {
+  background-color: #e8f5e8;
+  color: #2e7d32;
+}
+
+.plan-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+}
+
+.trainer-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.trainer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.trainer-header h3 {
+  color: #333;
+  margin: 0;
+}
+
+.trainer-info h4 {
+  color: #4a90e2;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.trainer-info p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.trainer-stats {
+  display: flex;
+  gap: 20px;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+.plan-highlights {
+  background: white;
+}
+
+.plan-highlights h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.plan-highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan-highlights li {
+  padding: 8px 0;
+  color: #555;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+
+.plan-highlights li:last-child {
+  border-bottom: none;
+}
+
+.plan-highlights li:before {
+  content: '✓';
+  color: #4a90e2;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.plan-description-section .card {
+  background: white;
+}
+
+.plan-description-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.short-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.full-access {
+  border-top: 2px solid #eaeaea;
+  padding-top: 30px;
+}
+
+.full-description {
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  white-space: pre-line;
+}
+
+.full-description p {
+  margin-bottom: 15px;
+}
+
+.full-description strong {
+  color: #333;
+}
+
+.access-granted {
+  background: #e8f5e8;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #4caf50;
+  margin-top: 30px;
+}
+
+.access-badge {
+  display: inline-block;
+  background: #4caf50;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.preview-mode {
+  border-top: 2px solid #eaeaea;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.preview-notice {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.lock-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.preview-notice h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.preview-notice p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.preview-notice ul {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.preview-notice li {
+  padding: 8px 0;
+  color: #555;
+  position: relative;
+  padding-left: 25px;
+}
+
+.preview-notice li:before {
+  content: '🔒';
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+.not-found {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.not-found h2 {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.not-found p {
+  color: #999;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .plan-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .plan-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .plan-header {
+    flex-direction: column;
+  }
+  
+  .plan-header h1 {
+    font-size: 2rem;
+  }
+  
+  .plan-info {
+    grid-template-columns: 1fr;
+  }
+}
